@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<style>
+    .card:hover
+    {
+    transform:scale(1,1)
+    background:#e5f3ff;
+    transition:all ease 2s;
+    box-shadow:0px 0px 28px 7px black;
+    }
+
+    .row
+    {
+    background-image:linear-gradient(purple,skyblue);
+    }
+</style>
+<div class="row" style="background:rgba(213,216,220,.5);">
+    <div class="h2 text-center pt-4 text-dark">Image<b class="text-warning">Gallery
+        <i class="fa fa-image"></i></b></div>
+
+
+    <div class="col-sm-12" style="background:orange;">
+        <div class="row">
+            {% if d%}
+            {% for x in d%}
+            <div class="col-sm-4 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="/{{x.gpic}}" class="card-img-top">
+  <div class="card-body">
+  </div>
+</div>
+
+            </div>
+            {% endfor%}
+            {%endif%}
+        </div>
+    </div>
+
+
+
+</div>
+{% endblock%}

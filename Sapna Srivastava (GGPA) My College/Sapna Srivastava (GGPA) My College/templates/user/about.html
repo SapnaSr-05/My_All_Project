@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+        <div class="h2 text-center">About <b style="color:#feaa00">Us <i class="fa fa-info-circle"></i></b></div>
+    <div class="col-sm-4 pt-2">
+        <img src="{% static 'images/img15.jpg'%}" style="height:450px;" class="card-img-top width-100" alt="...">
+    </div>
+    <div class="col-sm-8 pt-3 fs-5">
+        <b class="text-success"><u>INTRTODUCATION</u></b><br/>
+        This project report will introduce how to build part of a course
+        management system using the Django framework. Django is an open source web application frame work which is
+        written in Python. This course management system built using Django has four major
+        components each of which has different functionality but similar architecture. In the project
+        report I will demonstrate details of using Django to build one major component of this
+        system: the group component, which is my major contribution to the whole system. Also
+        the technique and process which is showed here can be applied to build the other three
+        components in the course management system as well as other complex database-driven
+        websites.<br/><br/>
+
+        <b class="text-success"><u>OBJECTIVE</u></b><br/>
+        To direct our service of education to the student ensuring their development by unfolding &
+        activating their unique potential ,creative ability & equipping them whit technical & generic
+        skills so that they would prove a talent pool to the industry & society at large
+        To produce technically comptent ,quality conscious engineers.
+        To develop functionally suitable and conducious for students and staff for academic purpose
+        To strengthen industry institute interaction.<br/><br/>
+    </div>
+</div>
+<div class="row fiximg p=0">
+    <div class="col-sm-12">
+        <div id="in" class="pt-5">
+            <h1 class="text-success text-center">Welcome To My College</h1>
+            <h2></h2>
+        </div>
+    </div>
+</div>
+{% endblock %}

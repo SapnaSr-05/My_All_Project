@@ -1,0 +1,46 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+
+<style>
+    .card:hover
+    {
+    transform:scale(1,1)
+    background:#e5f3ff;
+    transition:all ease 2s;
+    box-shadow:0px 0px 28px 7px black;
+    }
+    .row
+    {
+    background-image:linear-gradient(red,skyblue);
+    }
+
+
+</style>
+<div class="row" style="background:rgba(213,216,220,.5);">
+    <div class="h2 text-center text-dark">Recruiters
+        <i class="fa fa-image"></i></div>
+
+    <div class="col-sm-12">
+        <div class="row">
+            {% if d%}
+            {% for x in d%}
+            <div class="col-sm-4 p-1">
+                <div class="card w-100">
+  <img style="height:150px;" src="/{{x.rpic}}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+  </div>
+</div>
+
+            </div>
+            {% endfor%}
+            {%endif%}
+        </div>
+    </div>
+
+
+
+</div>
+{% endblock%}

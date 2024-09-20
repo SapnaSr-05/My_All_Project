@@ -1,0 +1,154 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<style>
+    .card:hover
+    {
+    transform:scale(1,1)
+    background:#e5f3ff;
+    transition:all ease 2s;
+    box-shadow:0px 0px 28px 7px black;
+    }
+    .row
+    {
+    background-image:linear-gradient(purple,skyblue);
+    }
+
+
+</style>
+
+<div class="row" style="background:rgba(213,216,220,.5);">
+    <div class="h2 text-center pt-4 text-dark">Our Courses <b class="text-warning">and Fee Details
+        <i class="fa fa-image"></i></b></div>
+    <div class="col-sm-12" style="background:orange;">
+        <div class="row">
+            <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img102.jpg'%}" class="card-img-top">
+  <div class="card-body">
+     <h5 class="card-title">Diploma</h5>
+        <b class="card-text">
+            <b>HOD:A.K Srivastava</b><br/>
+            <b>Available Seat:</b>5000<br/>
+            <b>Course Duration:</b>3years<br/>
+            <b>Fee(per/year):</b>30000/-<br/>
+        </b>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+                </div>
+            </div>
+              <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img52.jpg'%}" class="card-img-top">
+  <div class="card-body">
+      <h5 class="card-title">B.Tech</h5>
+        <p class="card-text">
+            <b>HOD:Divya Singh</b><br/>
+            <b>Available Seat:</b>4000<br/>
+            <b>Course Duration:</b>4years<br/>
+            <b>Fee(per/year):</b>40Lack/-<br/>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+              <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/edit-profile-img.png'%}" class="card-img-top">
+  <div class="card-body">
+      <h5 class="card-title">MBA</h5>
+        <p class="card-text">
+            <b>HOD:Sexna Srivastava</b><br/>
+            <b>Available Seat:</b>4000<br/>
+            <b>Course Duration:</b>4years<br/>
+            <b>Fee(per/year):</b>55000<br/>
+
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+              <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img78.jpg'%}" class="card-img-top">
+  <div class="card-body">
+      <h5 class="card-title">BCA</h5>
+        <p class="card-text">
+            <b>HOD:Kiran Devi</b><br/>
+            <b>Available Seat:</b>2000<br/>
+            <b>Course Duration:</b>2yeras<br/>
+            <b>Fee(per/year):</b>35000<br/>
+
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+              <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img92.jpg'%}" class="card-img-top">
+  <div class="card-body">
+      <h5 class="card-title">M.Tech</h5>
+        <p class="card-text">
+            <b>HOD:Manoj Srivastava</b><br/>
+            <b>Available Seat:</b>5000<br/>
+            <b>Course Duration:</b>45000<br/>
+            <b>Fee(per/year):</b>5years<br/>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+            <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img93.webp'%}" class="card-img-top">
+  <div class="card-body">
+     <h5 class="card-title">PGDHRM</h5>
+        <p class="card-text">
+            <b>HOD:Nikhil Singh</b><br/>
+            <b>Available Seat:</b>2000<br/>
+            <b>Course Duration:</b>5yeras<br/>
+            <b>Fee(per/year):</b>45000/-<br/>
+
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+            <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img94.webp'%}" class="card-img-top">
+  <div class="card-body">
+     <h5 class="card-title">BSC</h5>
+        <p class="card-text">
+            <b>HOD:S.K Srivastava</b><br/>
+            <b>Available Seat:</b>3000<br/>
+            <b>Course Duration:</b>5years<br/>
+            <b>Fee(per/year):</b>55000/-<br/>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+
+              <div class="col-sm-3 p-1">
+                <div class="card w-100">
+  <img style="height:200px;" src="{% static 'images/img96.jpg'%}" class="card-img-top">
+  <div class="card-body">
+      <h5 class="card-title">BSC Biotechnology</h5>
+        <p class="card-text">
+            <b>HOD:Savita Shukla</b><br/>
+            <b>Available Seat:</b>35000<br/>
+            <b>Course Duration:</b>4yeras<br/>
+            <b>Fee(per/year):</b>45000/-<br/>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+

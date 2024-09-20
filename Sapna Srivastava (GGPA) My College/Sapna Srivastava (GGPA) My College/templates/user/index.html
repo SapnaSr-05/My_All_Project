@@ -1,0 +1,209 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<style>
+    .card:hover
+    {
+    transform:scale(1,1)
+    background:#e5f3ff;
+    transition:all ease 2s;
+    box-shadow:0px 0px 28px 7px black;
+    }
+    .row
+    {
+    background-image:linear-gradient(navy,sky);
+    }
+</style>
+<!-- start slider -->
+<div class="row slider">
+    <div class="col-sm-12 mx-2">
+        <!-- start slider-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner mx-2">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/img1.webp' %}" style="max-height:650px;" class="d-block w-100"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/img17.jpg'%}" style="max-height:650px;" class="d-block w-100"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/img21.jpg'%}" style="max-height:650px;" class="d-block w-100"
+                         alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- end slider -->
+
+    </div>
+</div>
+<!-- end slider -->
+
+
+<!-- start ourfaculites-->
+<div class="row OurFaculties py-5">
+    <div class="h3 text-center">Our<b class="text-success">Faculties<i class="fa fa-course"></i></b></div>
+    <div class="col-sm-3">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img102.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning"> Faculty of Information Technology</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3 ">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img101.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning"> Faculty Of Computer Science</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card w-100">
+            <img src="{% static 'images/img98.webp'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning"> Faculty of Electrical Engineering</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card w-100">
+            <img src="{% static 'images/img78.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                 <h5 class="card-title fs-4 text-center text-warning"> Faculty of Civil Engineering</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+        </div>
+<!-- end ourfaculites  -->
+<!-- start branch-->
+<div class="row OurBranch py-3">
+    <div class="h3 text-center">Our<b class="text-success">Branch<i class="fa fa-course"></i></b></div>
+    <div class="col-sm-3">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img10.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning">Information Technology</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img11.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning">Electrical Engineering</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img12.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning">Civil Engineering</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+<div class="col-sm-3">
+        <div class="card" style="width:100%;">
+            <img src="{% static 'images/img10.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title fs-4 text-center text-warning">Computer Science</h5>
+                <button type="buttom" class="btn btn-success rounded">Read More</button>
+            </div>
+        </div>
+    </div>
+<!--end branch-->
+<!--central library======================================================================================-->
+   <div class="row">
+        <div class="col-sm-12 offer my-5 bg-dark p-5">
+        <div class="row">
+            <div class="col-sm-8">
+        <div class="h3 text-center">Central<b class="text-success">Library<i class="fa fa-Library"></i></b></div>
+        <p>A well-equipped and well-managed library is the foundation of modern educational structure.<br/>
+            A rich library is an essential source of learning to any institution.<br/>
+            The library of Goverment polytencnic College of Engineering & Technology<br/>
+            adequately caters to the needs of  Dipolma students.<br/>
+            It is sufficiently equipped to fulfill the requirements of it's faculty and staff members.
+            </p>
+    </div>
+            <div class="col-sm-4">
+    <img src="{% static 'images/img24.jpg'%}" style="max-height:650px;" class="img-fluid"/>
+            </div>
+            <div class="row p-3">
+                <div class="col-sm-3">
+                            <h5 class="card-title">Books</h5>
+        <p class="card-text">
+            <b>Colleges:</b>30,000+<br/>
+            <b>E-books:</b>1500+<br/>
+            <b>Books:</b>12000<br/>
+                </div>
+                <div class="col-sm-3">
+                            <h5 class="card-title">National Journals</h5>
+        <p class="card-text">
+            <b>E-journals:</b>30,000+<br/>
+            <b>Civil Engineering-</b>2<br/>
+                    <b>Inforamation Technology-</b>3<br/>
+            <b>Computer Science-</b>7<br/>
+            <b>Electrical Engineering-</b>10<br/>
+                </div>
+                <div class="col-sm-3">
+                            <h5 class="card-title">Library Hours</h5>
+        <p class="card-text">
+            <b>Monday to Sunday:</b>10Am to 3:00Pm<br/>
+            <b>Library works in days:</b>360<br/>
+                </div>
+                <div class="col-sm-3">
+                    <h5 class="card-title">Books Deatils</h5>
+        <p class="card-text">
+            <b>English and Hindi Newspapers-</b>20,Vol.523<br/>
+            <b>Print journals:</b>284<br/>
+            <b>Print Magazines:</b>224<br/>
+                </div>
+            </div>
+
+        </div>
+        </div>
+   </div>
+
+            <!--end central libraray-->
+
+
+{% endblock %}
+

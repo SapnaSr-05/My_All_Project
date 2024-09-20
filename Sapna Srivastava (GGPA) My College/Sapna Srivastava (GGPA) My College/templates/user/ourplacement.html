@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+<style>
+    .card:hover
+    {
+    transform:scale(1,1)
+    background:#e5f3ff;
+    transition:all ease 2s;
+    box-shadow:0px 0px 28px 7px black;
+    }
+     .row
+    {
+    background-image:linear-gradient(navy,skyblue);
+    }
+</style>
+<div class="row p-3 bg-light">
+    <h1 class="text-center p-3">Our<font style="color:#ffab00;">Placements</font></h1>
+    <div class="col-sm-3">
+        <div class="row">
+            <ul class="list-group">
+                <li class="list-group-item text-centre h4 m-2 text-warning">course details</li>
+            </ul>
+        {% if course %}
+        {% for x in course%}
+        <a href="/user/ourplacement?msg={{x.id}}"><li class="list-group-item h5">{{x.cname}}</li></a>
+        {% endfor %}
+        {% endif %}
+        <a href="/user/ourplacement/" style="text-decoration:none;"><li class="list-group-item h5">All OurPlacement</li></a>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="row">
+            {% if ourplacement %}
+            {% for x in ourplacement %}
+            <div class="col-sm-3 p-3 " >
+                <div class="card w-100 bg-warning">
+  <img src="/{{x.stupic}}" class="card-img-top" style="height:150px;" alt="...">
+  <div class="card-body">
+      <p class="card-text text-center">
+      <h5 class="card-title"><b>Name:</b>{{x.name}}</h5>
+      <h5 class="card-text"><b>Passout Year:</b>{{x.pyear}}</h5>
+      <h5 class="card-text"><b>Course:</b>{{x.pcourse}}</h5>
+      <h5 class="card-text"><b> Branch:</b>{{x.branch}}</h5>
+      <h5 class="card-text"><b>Designation:</b>{{x.designation}}</h5>
+      <h5 class="card-text"><b>Company:</b>{{x.cmpname}}</h5>
+      <h5 class="card-text"><b>City:</b>{{x.city}}</h5>
+      <h5 class="card-text"><b>Date:</b>{{x.pdate}}</h5>
+      </p>
+  </div>
+</div>
+            </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
